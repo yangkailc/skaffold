@@ -54,6 +54,5 @@ func (r *SkaffoldRunner) statusCheck(ctx context.Context, out io.Writer) error {
 	if !r.runCtx.Opts.StatusCheck {
 		return nil
 	}
-	// Perform
-	return deploy.GetDeployedManifests()
+	return nil
 }
